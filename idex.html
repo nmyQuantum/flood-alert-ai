@@ -24,7 +24,7 @@ async function analyze() {
   resultDiv.style.display = 'block';
   resultDiv.innerHTML = 'Đang phân tích...';
 
-  const response = await fetch('BACKEND_URL/analyze', {
+  const response = await fetch('https://flood-alert-ai.onrender.com/analyze', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ text })
